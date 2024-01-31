@@ -57,7 +57,7 @@ export default function Login() {
   }
   return (
     <>
-      <div className='container pt-5 auth'>
+      <div className='container pt-5 auth animate__animated animate__backInDown'>
         <div className='row'>
           <div className='col'>
             <div className='card p-4 text-center'>

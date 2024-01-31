@@ -52,7 +52,7 @@ export default function Signup() {
         // ...
       })
       .catch((err) => {
-        window.toastify("Already Signup", "error")
+        window.toastify("Error ! Something went wrong", "error")
         console.log(err)
 
         // ..
@@ -69,7 +69,7 @@ export default function Signup() {
 
   return (
     <>
-      <div className='container pt-5 auth'>
+      <div className='container pt-5 auth animate__animated animate__backInUp'>
         <div className='row'>
           <div className='col'>
             <div className='card p-4 text-center'>
@@ -96,8 +96,9 @@ export default function Signup() {
                         ? <span>SignUp</span>
                         : <div className="spinner spinner-grow spinner-grow-sm"><datagrid></datagrid></div>
                       }</button>
-                      
-                      <Link to="/auth/login" className='mb-0' style={{color:"red", textDecoration:"none"}} >Already Signup</Link>
+                      <br />
+                     
+                      <Link to="/auth/login" className='mb-0 mx-1' style={{color:"red", textDecoration:"none"}} >Already SignUp</Link>
                        <br />
                     
                       

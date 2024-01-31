@@ -116,9 +116,10 @@ export default function Dashboard() {
                     <th >S.No</th>
                     <th>Full Name</th>
                     <th >Email</th>
+                    <th >Phone</th>
+
                     <th >City</th>
                     <th >Country</th>
-                    <th >Subject</th>
                     {/* <th >Action</th> */}
 
                   </tr>
@@ -130,9 +131,10 @@ export default function Dashboard() {
                       <th>{i + 1}</th>
                       <td>{doc.fullName}</td>
                       <td>{doc.email}</td>
-                      <td>{doc.city}</td>
-                      <td>{doc.country}</td>
+                      <td>{doc.number}</td>
+
                       <td>{doc.subject}</td>
+                      <td>{doc.country}</td>
                       {/* <td>
                         <button className='btn btn-sm btn-info m-1' onClick={() => { handleUpadate(doc) }}>Update</button>
                         <button className='btn btn-sm btn-danger m-1' onClick={() => { handleDelete(doc) }}>Delete</button>

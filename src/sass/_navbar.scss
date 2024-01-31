@@ -1,0 +1,23 @@
+
+.nav-link {
+  color: black !important;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+// #moon {
+//     color: blue;
+// }
+
+.nav-link:hover {
+    color: red !important;
+    font-stretch: condensed !important;
+font-weight: bold;
+    transition: 0.3s;
+}
+.navbar {
+
+background: #649173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DBD5A4, #649173) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

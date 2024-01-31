@@ -71,8 +71,8 @@ export default function Contact() {
 
   return (
     <>
-      <div className='container pt-5 '>
-                <h2 className='mb-4 text-center'>Contact </h2>
+      <div className='container pt-5 animate__animated animate__shakeY'>
+                <h2 className='mb-4 text-center'>Submit Your Issue Here </h2>
 
                 <div className='row'>
                     <div className='col'>
@@ -96,7 +96,7 @@ export default function Contact() {
 
 
                                     <div className='col-12 col-md-6 mb-2'>
-                                        <input className='form-control ' onChange={handleChange} type="text" name='country' placeholder='Country' />
+                                        <input className='form-control ' onChange={handleChange} type="text" name='number' placeholder='Phone' />
                                     </div>
 
                                     <div className='col-12 mb-3'>
@@ -111,7 +111,7 @@ export default function Contact() {
                                     <div className='col-12 col-md-6 offset-md-3'>
                                         <button className='btn btn-outline-info w-50' disabled={processing}>
                                             {!processing
-                                                ? <span>Contact</span>
+                                                ? <span>Submit</span>
                                                 : <div className="spinner spinner-grow spinner-grow-sm"><datagrid></datagrid></div>
                                             }</button>
 
