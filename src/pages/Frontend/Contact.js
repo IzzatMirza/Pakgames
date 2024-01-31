@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { firestore } from 'config/firebase';
 import {  doc, serverTimestamp, setDoc } from 'firebase/firestore';
 
@@ -9,7 +11,7 @@ const initialstate = {
     fullName : "" ,
     email : "" ,
     city : "" ,
-    country: "" ,
+    phone: "" ,
     subject : "" ,
     // message:"",
 }
@@ -18,6 +20,8 @@ export default function Contact() {
 
   const [state, setState] = useState(initialstate)
   const [processing  , setProcessing] = useState (false)
+  const navigate = useNavigate()
+
 
   const handleChange = e => {
     const { name, value } = e.target
@@ -29,7 +33,7 @@ export default function Contact() {
 
 
 
-    let {fullName, email , city , country , subject  } = state
+    let {fullName, email , city , phone , subject  } = state
 
     fullName = fullName.trim()
     subject = subject.trim()
@@ -39,7 +43,7 @@ export default function Contact() {
     if (fullName.length < 3) {
         return window.toastify("Enter Correct Name", "error")
     }
-    if (subject.length < 3) {
+    if (subject.length < 8) {
         return window.toastify("Enter Correct Subject", "error")
     }
     
@@ -50,7 +54,7 @@ export default function Contact() {
      
 
     let formData = {
-        fullName, email, city, country, subject,
+        fullName, email, city, phone, subject,
         id: window.getRandomId(),
         dateCreated: serverTimestamp()
     }
@@ -61,6 +65,7 @@ export default function Contact() {
          await setDoc(doc(firestore, "messages", formData.id), formData);
         // console.log("Document written with ID: ", docRef.id);
         window.toastify("Msg Sent", "success")
+        navigate("/")
     } 
     catch (e) {
         console.error("Something Wrong While Sent Message: ", e);
@@ -91,12 +96,12 @@ export default function Contact() {
 
 
                                     <div className='col-12 col-md-6 mb-2 '>
-                                        <input className='form-control ' onChange={handleChange} type="text" name='city' placeholder='City' />
+                                        <input className='form-control ' onChange={handleChange} type="Phone" name='city' placeholder='City' />
                                     </div>
 
 
                                     <div className='col-12 col-md-6 mb-2'>
-                                        <input className='form-control ' onChange={handleChange} type="text" name='number' placeholder='Phone' />
+                                        <input className='form-control ' onChange={handleChange} type="text" name='phone' placeholder='Phone' />
                                     </div>
 
                                     <div className='col-12 mb-3'>
