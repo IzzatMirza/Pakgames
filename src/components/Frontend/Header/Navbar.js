@@ -10,21 +10,28 @@ defineElement(lottie.loadAnimation);
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary animate__animated animate__jello animate__delay-0.5s">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary animate__animated animate__flash animate__delay-0.5s">
+        <div className="container">
+
+
           {/* <lord-icon
-            src="https://cdn.lordicon.com/jtiihjyw.json"
-            trigger="hover"
-            style={{ width: "70px", height: "50px" }}>
+            src="https://cdn.lordicon.com/zfzufhzk.json"
+            trigger="loop"
+            delay="1500"
+            state="in-dynamic"
+            style={{ width: "50px", height: "50px" }}>
           </lord-icon> */}
 
           <lord-icon
-            src="https://cdn.lordicon.com/mebvgwrs.json"
-            trigger="hover"
+            src="https://cdn.lordicon.com/jtiihjyw.json"
+            trigger="loop"
             delay="1500"
             state="in-reveal"
-            style={{width:"50px",height:"50px"}}>
+            style={{ width: "50px", height: "50px" }}>
+
           </lord-icon>
+
+
           <a className="navbar-brand" href="#" style={{ color: "#e76f51", fontFamily: "sans-serif", fontSize: "28px" }}>PakGames</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

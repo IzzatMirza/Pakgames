@@ -10,7 +10,7 @@ export default function About() {
 
       <div className='container'>
         <div className='row'>
-          <div className=' col-12 col-md-6 mt-5'>
+          <div className=' col-12 col-md-6 mt-5 animate__animated animate__backInUp'>
             <th>1.</th>
             <tr>Enter your phone number</tr>
             <th>2.</th>
@@ -30,7 +30,7 @@ export default function About() {
           </div>
 
           <div className='col-12 col-md-6 mt-5'>
-            <img className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img5.png" alt="Img" />
+            <img  className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded animate__animated animate__swing animate__delay-1s" id='responsive' src="Img5.png" alt="Img" />
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default function About() {
           </div>
 
           <div className='col-12 col-md-6 mt-5'>
-            <img className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img3.png" alt="Img" />
+            <img  className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img3.png" alt="Img" />
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function About() {
           </div>
 
           <div className='col-12 col-md-6 mt-5'>
-            <img className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img4.png" alt="Img" />
+            <img  className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img4.png" alt="Img" />
           </div>
         </div>
 
@@ -124,12 +124,13 @@ export default function About() {
           </div>
 
           <div className='col-12 col-md-6 mt-5'>
-            <img className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img6.png" alt="Img" />
+            <img  className="rounded mx-auto d-block  shadow-lg p-1 mb-5 bg-white rounded" id='responsive' src="Img6.png" alt="Img" />
           </div>
         </div>
 
       </div>
 
+     
 
 
 
