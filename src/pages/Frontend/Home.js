@@ -1,6 +1,8 @@
 import { Button } from 'bootstrap/dist/js/bootstrap.bundle'
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fontawesome/react-fontawesomee'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
     return (
@@ -8,13 +10,13 @@ export default function Home() {
             <div className='container mt-5'>
                 <div className='row mt-5'>
                     <div className='col-12 col-md-6'>
-                        <h1 className='mt-5 animate__animated animate__backInLeft animate__delay-1s'>Welcome to the Future
+                        <h1 className='mt-5 animate__animated animate__backInLeft animate__delay-1s' style={{fontFamily:"fantasy"}}>Welcome to the Future
                             <span className='text-danger'>....</span></h1>
 
                         <div style={{ border: "1px solid black" }}></div>
 
-                        <h4 className='mt-5 animate__animated animate__flash animate__delay-2s'>We bring to you a very awesome money <br />making plateform , that is actually  very <br /> good . click on below button 
-                            for free <br /> registration , Watch the Video to 
+                        <h4 className='mt-5 animate__animated animate__flash animate__delay-2s' style={{fontFamily:"revert"}}>We bring to you a very awesome money <br />making plateform , that is actually  very <br /> good . click on below button
+                            for free <br /> registration , Watch the Video to
                             <br />know the complete method</h4>
 
                         <button id='shadow' className='btn btn-warning mt-5 animate__animated animate__swing animate__delay-4s'>
@@ -27,12 +29,28 @@ export default function Home() {
 
                         </button>
 
+                        <button id='shadow' className='btn btn-info mx-2 mt-5 w-auto animate__animated animate__swing animate__delay-4s'>
+                            <Link style={{ textDecoration: "none", color: "black", fontSize: "20px" }}  to="https://chat.whatsapp.com/DLeEQjmvwl23ez5qviStDl">Join Whatsapp</Link>
+
+                        </button>
+
+
+
+                        <lord-icon
+                            className="btn  mx-2 mt-5 "
+                            src="https://cdn.lordicon.com/fdxqrdfe.json"
+                            trigger="loop"
+                            delay="500"
+                            style={{ width: "50px", height: "50px" }}>
+                        </lord-icon>
+
+                        <i class="fa-brands fa-whatsapp"></i>
 
 
                     </div>
 
                     <div className=' col-12 col-md-6 mt-5' >
-                        <img  className='responsive' src="Img1.png" alt="" />
+                        <img className='responsive' src="Img1.png" alt="" />
                     </div>
 
 
@@ -46,7 +64,7 @@ export default function Home() {
             <div className='container mt-5'>
 
                 <div className='row mt-5'>
-                    <div  className=' col-12 col-md-6'>
+                    <div className=' col-12 col-md-6'>
                         <img id='shadow' className=' rounded responsive mt-5' src="Img2.avif" alt="Img" />
                     </div>
 
