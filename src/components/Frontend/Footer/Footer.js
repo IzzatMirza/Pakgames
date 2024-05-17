@@ -12,7 +12,7 @@ export default function Footer() {
         <h1 className='text-danger text-center'>Note!
         </h1>
         <p className='text-white text-center'>You can do contact with us on  Telegram <br />
-          <h2>Go and search "@IzzatMirza" on Telegram</h2>  </p>
+          <h2>Go and search "@Stonebeer000" on Telegram</h2>  </p>
       </div>
       <footer className='py-4 bg-secondary mt-5'>
         <div className='container'>
