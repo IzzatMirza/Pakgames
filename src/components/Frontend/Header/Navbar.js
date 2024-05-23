@@ -61,11 +61,26 @@ export default function Header() {
               {/* <li className="nav-item ">
                   <Link to="/auth/login" className="nav-link active" >Login</Link>
                 </li> */}
-              <button className='btn btn-secondary'>
+              <button className='btn m-1 btn-secondary'>
                 <li className="nav-item">
                   <Link to="/auth/signup" className="nav-link active" >SignUp</Link>
                 </li>
               </button>
+
+              {/* <button id='shadow' className='btn btn-warning mt-5 animate__animated animate__swing animate__delay-4s'>
+                            <Link style={{ textDecoration: "none", color: "black", fontSize: "20px" }} to="https://pakgames.net/#/register?invitationCode=8552295284">Free Register</Link>
+
+                        </button> */}
+
+
+<button className='btn m-1 btn-secondary'>
+                <li className="nav-item">
+                  <Link to="https://pakgames.net/#/register?invitationCode=8552295284" className="nav-link active" >Free Register</Link>
+                </li>
+              </button>
+
+
+
               {/* <li className="nav-item">
                 <Link to="/dashboard/dashboard" className=" disable" >Dashboard</Link>
               </li> */}

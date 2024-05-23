@@ -30,7 +30,7 @@ export default function Home() {
                         </button>
 
                         <button id='shadow' className='btn btn-info mx-2 mt-5 w-auto animate__animated animate__swing animate__delay-4s'>
-                            <Link style={{ textDecoration: "none", color: "black", fontSize: "20px" }}  to="https://chat.whatsapp.com/DLeEQjmvwl23ez5qviStDl">Join Whatsapp</Link>
+                            <Link style={{ textDecoration: "none", color: "black", fontSize: "20px" }}  to="https://chat.whatsapp.com/DLeEQjmvwl23ez5qviStDl">Official Group</Link>
 
                         </button>
 
@@ -75,7 +75,7 @@ export default function Home() {
                             BEST OF LUCK
                         </h3>
 
-                        <h2><p><span className='text-danger'>!</span>Safe Deposit, Safe and Fast Withdraw <span className='text-danger'>!</span></p></h2>
+                        <h2><p><span className='text-danger'>!</span>Safe Deposit, Safe Trade and Fast Withdraw <span className='text-danger'>!</span></p></h2>
 
 
                     </div>
